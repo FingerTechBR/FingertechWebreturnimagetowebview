@@ -23,7 +23,7 @@ namespace Captura.Api.Controllers
             NBioAPI m_NBioAPI = new NBioAPI();
             NBioAPI.Type.INIT_INFO_0 initInfo0;
             uint ret = m_NBioAPI.GetInitInfo(out initInfo0);
-            Console.WriteLine("passeiaqui");
+    
             if (ret == NBioAPI.Error.NONE)
             {
                 initInfo0.EnrollImageQuality = Convert.ToUInt32(50);
